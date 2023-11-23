@@ -1,0 +1,7 @@
+mkdir api-database
+cd api-database
+npm init -y
+npm install express mysql2 pg oracledb sqlite3 aws-sdk
+
+npm init -y
+npm install express mysql2 pg oracle

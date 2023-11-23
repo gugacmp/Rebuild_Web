@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Cadastro de Usuário</title>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Cadastro de Usuário</h2>
+        <form id="userForm">
+            <label for="userId">ID:</label>
+            <input type="text" id="userId" name="userId" readonly>
+
+            <label for="username">Usuário:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Senha:</label>
+            <input type="password" id="password" name="password" required>
+
+            <label for="confirmPassword">Confirmar Senha:</label>
+            <input type="password" id="confirmPassword" name="confirmPassword" required>
+
+            <label for="fullName">Nome:</label>
+            <input type="text" id="fullName" name="fullName" required>
+
+            <button type="button" onclick="validarCampos()">Validar e Cadastrar</button>
+            <button type="button" onclick="editarUsuario()">Editar</button>
+        </form>
+    </div>
+
+    <script src="validaruser.js"></script>
+</body>
+</html>
