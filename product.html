@@ -1,0 +1,22 @@
+{%load static%}
+<!-- product_create.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Produto</title>
+    <link rel="stylesheet" href="{% static 'css/cad_produto.css'%}">
+    <!-- Adicione links para seus arquivos de estilo CSS, se necessário -->
+</head>
+<body>
+    <div class="search-container">
+        <h2>Cadastro de Produto</h2>
+        <form method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit">Salvar</button>
+        </form>
+    </div>
+</body>
+</html>
